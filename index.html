@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Pengelolaan Buku</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Aplikasi Pengelolaan Buku</h1>
+    </header>
+
+    <div class="wrapper">
+      <div class="container bg-white shadow" id="insertBook">
+        <h2 class="container-header text-center">Masukan Buku</h2>
+        <form class="form" id="form" autocomplete="off">
+          <div class="form-group form-title">
+            <label for="title">Judul Buku</label>
+            <input type="text" id="title" required>
+          </div>
+          <div class="form-group form-title">
+            <label for="author">Pengarang Buku</label>
+            <input type="text" id="author" required>
+          </div>
+          <div class="form-group form-title">
+            <label for="year">Tahun Rilis</label>
+            <input type="number" id="year" required>
+          </div>
+          <input type="submit" value="Submit" name="Submit" class="btn-submit">
+        </form>
+      </div>
+      <div class="container">
+        <h2 class="container-header">Buku yang sedang dibaca</h2>
+        <div class="list-item" id="isProgress">
+
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="container-header">Buku yang selesai dibaca</h2>
+        <div class="list-item" id="isComplete">
+          
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src ="./script.js"></script>
+  </body>
+</html>
